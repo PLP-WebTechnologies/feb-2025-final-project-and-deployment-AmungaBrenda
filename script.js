@@ -103,6 +103,34 @@ function initProductFilters() {
     });
 }
 
+// Highlight active navigation link
+ document.addEventListener('DOMContentLoaded', function() {
+    // Get current page path
+    const path = window.location.pathname;
+    
+    // Remove active class from all navigation links
+    const navLinks = document.querySelectorAll('nav li a');
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+    });
+    
+    // Add active class to current page link
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (path === href || (href !== '/' && path.startsWith(href))) {
+        link.classList.add('active');
+      } else if (path === '/' && href === '/') {
+        link.classList.add('active');
+      }
+    });
+    
+    // Add a class to body for page-specific styles
+    if (path.includes('/blog')) {
+      document.body.classList.add('blog-page');
+    }
+  });
+
+
 // FAQ Accordion
 function initFaqAccordion() {
     const faqItems = document.querySelectorAll('.faq-item');
