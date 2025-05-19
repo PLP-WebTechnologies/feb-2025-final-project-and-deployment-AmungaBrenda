@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Tiny Treasures</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Tiny Treasures</h1>
+                <p>Premium Baby Products</p>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h2>Our Products</h2>
+            <p>Thoughtfully designed and carefully selected for your little one</p>
+        </div>
+    </section>
+
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-category="all">All Products</button>
+                <button class="filter-btn" data-category="clothing" id="clothing">Clothing</button>
+                <button class="filter-btn" data-category="toys" id="toys">Toys</button>
+                <button class="filter-btn" data-category="feeding" id="feeding">Feeding</button>
+                <button class="filter-btn" data-category="sleep">Sleep</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-grid">
+        <div class="container">
+            <div class="products">
+                <!-- Clothing Products -->
+                <div class="product-card" data-category="clothing">
+                    <div class="product-image">
+                        <img src="assets/cotton onesie.jpg" alt="Organic Cotton Onesie">
+                    </div>
+                    <div class="product-info">
+                        <h3>Organic Cotton Onesie</h3>
+                        <p class="product-description">Ultra-soft, GOTS certified organic cotton onesie with snap closures.</p>
+                        <p class="product-price">$24.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothing">
+                    <div class="product-image">
+                        <img src="assets/sleep sack.jpg" alt="Bamboo Sleep Sack">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bamboo Sleep Sack</h3>
+                        <p class="product-description">Breathable bamboo sleep sack with temperature regulation for peaceful nights.</p>
+                        <p class="product-price">$39.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothing">
+                    <div class="product-image">
+                        <img src="assets/baby wool hat.png" alt="Merino Wool Hat">
+                    </div>
+                    <div class="product-info">
+                        <h3>Merino Wool Hat</h3>
+                        <p class="product-description">Naturally thermoregulating merino wool hat for all seasons.</p>
+                        <p class="product-price">$18.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Toys Products -->
+                <div class="product-card" data-category="toys">
+                    <div class="product-image">
+                        <img src="assets/stacking blocks.jpg" alt="Wooden Stacking Blocks">
+                    </div>
+                    <div class="product-info">
+                        <h3>Wooden Stacking Blocks</h3>
+                        <p class="product-description">Handcrafted wooden blocks made from sustainable maple wood with non-toxic finish.</p>
+                        <p class="product-price">$34.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="toys">
+                    <div class="product-image">
+                        <img src="assets/wooden teethers.png" alt="Organic Cotton Teether">
+                    </div>
+                    <div class="product-info">
+                        <h3>Organic Cotton Teether</h3>
+                        <p class="product-description">Natural cotton teether with wooden teething ring for soothing relief.</p>
+                        <p class="product-price">$16.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="toys">
+                    <div class="product-image">
+                        <img src="assets/wooden rattle.jpg" alt="Musical Wooden Rattle">
+                    </div>
+                    <div class="product-info">
+                        <h3>Musical Wooden Rattle</h3>
+                        <p class="product-description">Gentle sounding wooden rattle to stimulate auditory development.</p>
+                        <p class="product-price">$22.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Feeding Products -->
+                <div class="product-card" data-category="feeding">
+                    <div class="product-image">
+                        <img src="assets/silicone feeding set.png" alt="Silicone Feeding Set">
+                    </div>
+                    <div class="product-info">
+                        <h3>Silicone Feeding Set</h3>
+                        <p class="product-description">Food-grade silicone plate, spoon, and cup set with suction base.</p>
+                        <p class="product-price">$29.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="feeding">
+                    <div class="product-image">
+                        <img src="assets/bib set.png" alt="Bamboo Fiber Bib Set">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bamboo Fiber Bib Set</h3>
+                        <p class="product-description">Ultra-absorbent bamboo bibs with adjustable closure, set of 3.</p>
+                        <p class="product-price">$19.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="feeding">
+                    <div class="product-image">
+                        <img src="assets/glass feeding bottles.png" alt="Glass Baby Bottles">
+                    </div>
+                    <div class="product-info">
+                        <h3>Glass Baby Bottles</h3>
+                        <p class="product-description">Thermal-resistant glass bottles with silicone sleeve, set of 2.</p>
+                        <p class="product-price">$32.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Sleep Products -->
+                <div class="product-card" data-category="sleep">
+                    <div class="product-image">
+                        <img src="assets/crib mattress.png" alt="Organic Crib Mattress">
+                    </div>
+                    <div class="product-info">
+                        <h3>Organic Crib Mattress</h3>
+                        <p class="product-description">GOTS certified organic cotton crib mattress with natural latex core.</p>
+                        <p class="product-price">$199.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="sleep">
+                    <div class="product-image">
+                        <img src="assets/wool sleeping sack.png" alt="Wool Sleep Sack">
+                    </div>
+                    <div class="product-info">
+                        <h3>Wool Sleep Sack</h3>
+                        <p class="product-description">Breathable and naturally temperature-regulating wool sleep sack.</p>
+                        <p class="product-price">$59.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="sleep">
+                    <div class="product-image">
+                        <img src="assets/wooden noise machine.png" alt="Wooden Sound Machine">
+                    </div>
+                    <div class="product-info">
+                        <h3>Wooden Sound Machine</h3>
+                        <p class="product-description">Natural white noise machine in sustainable wooden housing.</p>
+                        <p class="product-price">$45.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tiny Treasures</h3>
+                    <p>Premium baby products for the modern family.</p>
+                    <p>Made with love and care for your little ones.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: hello@tinytreasures.com</p>
+                    <p>Phone: (+254) 726 013 909</p>
+                    <p>Address: Limuru Road Gigiri, Nairobi</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tiny Treasures. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
